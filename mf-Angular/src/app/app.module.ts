@@ -5,13 +5,16 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { ListCharactersComponent } from './list-characters/list-characters.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListCharactersComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/angular' }],
