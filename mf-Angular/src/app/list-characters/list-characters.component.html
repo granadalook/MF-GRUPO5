@@ -1,1 +1,15 @@
-<p>list-characters works!</p>
+<div class="wrap">
+    <h1>Angular Micro-frontend</h1>
+    <button class="button" (click)="getCharacters()">characters</button>
+</div>
+
+
+<div class="list-container">
+    <div class="card" *ngFor="let character of characters">
+        <img [src]="character.image"> 
+        <div class="container">
+            <h3>{{character.name}}</h3>  
+            <p>{{ character.gender }}</p>
+        </div>
+    </div>
+</div>

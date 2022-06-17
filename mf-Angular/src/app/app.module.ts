@@ -18,6 +18,6 @@ import { ListCharactersComponent } from './list-characters/list-characters.compo
     HttpClientModule
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/angular' }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ListCharactersComponent]
 })
 export class AppModule { }
