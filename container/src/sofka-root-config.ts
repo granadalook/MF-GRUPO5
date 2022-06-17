@@ -1,4 +1,5 @@
 import { registerApplication, start } from "single-spa";
+import './css/styles.css'
 
 registerApplication({
   name: "@sofka/mf-react",
